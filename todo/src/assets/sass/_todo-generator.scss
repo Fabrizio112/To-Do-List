@@ -1,0 +1,18 @@
+#todo-generator {
+    width: 100%;
+    height: 30vh;
+    gap: 1rem;
+    @include flex(column, center, center);
+
+    textarea {
+        width: 80%;
+        height: 80%;
+        resize: none;
+        outline: none;
+        font-size: 1.5rem;
+    }
+
+    button {
+        display: block;
+    }
+}

@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(221, 139, 17);
+    text-align: center;
+}
+
+#root {
+    h1 {
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+}
+
+#container-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
