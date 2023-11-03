@@ -1,33 +1,36 @@
 import { useState } from "react";
 import ToDoGenerator from "./ToDoGenerator";
 import ToDoCard from "./ToDoCard";
+import { useDispatch, useSelector } from "react-redux";
+import { addToDo, deleteToDo, updateToDo } from "../store/toDoListSlice";
 
 function ToDoApp() {
-    const [list, setList] = useState([])
+
+    const dispatch = useDispatch()
+    const todo = useSelector(state => state.todo)
+
 
     const handleListChange = (e) => {
         e.preventDefault()
+        if (e.target.firstChild.value.length === 0) return
+        let textarea = e.target.firstChild
         let id = Date.now()
-        setList([...list, { todo: e.target.task.value, id }])
+        dispatch(addToDo({ todo: e.target.task.value, id }))
+        textarea.value = ""
     }
     const handleDelete = (id) => {
-        let elementToDelete = list.filter((el) => el.id != id)
-        setList([...elementToDelete])
+        dispatch(deleteToDo(id))
 
     }
-    const handleUpdate = (id, todoEdit) => {
-        let prreke = list.find((el) => {
-            if (el.id === id) {
-                el.todo = todoEdit
-            }
-        })
-        console.log(prreke)
+    const handleUpdate = (todoEdited) => {
+        dispatch(updateToDo(todoEdited))
     }
+
     return (<>
         <h1>To-Do App</h1>
         <ToDoGenerator handleListChange={handleListChange} />
         <section id="container-cards">
-            {list.length != 0 && list.map((el) => <ToDoCard key={el.id} el={el} handleDelete={handleDelete} handleUpdate={handleUpdate} />)}
+            {todo.length != 0 && todo.map((el) => <ToDoCard key={el.id} el={el} handleDelete={handleDelete} handleUpdate={handleUpdate} />)}
         </section>
     </>);
 }
