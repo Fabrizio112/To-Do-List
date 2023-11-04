@@ -7,7 +7,7 @@ En este proyecto se usaron hooks como **useState** y tecnologias **CSS,HTML,Java
 _Este proyecto se realizo con el proposito de practicar React_
  
 <p align="center">
-<img width="500px" heigth="500px" src="./src/assets/taking-notes.gif" alt="person taking notes">
+<img width="500px" heigth="500px" src="./src/assets/anoto-anotando.gif" alt="person taking notes">
 </p>
 
 ## 💡 Como se penso este proyecto y como funciona¡
@@ -40,7 +40,7 @@ In this project  was used hooks like **useState** and technologies like **CSS,HT
 This proyect was built with the purpose of practising React
  
 <p align="center">
-<img width="500px" heigth="500px" src="./src/assets/anoto-anotando.gif" alt="person taking notes">
+<img width="500px" heigth="500px" src="./src/assets/taking-notes.gif" alt="person taking notes">
 </p>
 
 ## 🤔 How i thought about the project and its functioning
