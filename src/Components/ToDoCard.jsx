@@ -17,9 +17,9 @@ function ToDoCard({ el, handleDelete, handleUpdate }) {
         <aside id="todo-card">
             {editable ? <textarea className="editable" value={todoEdit} onChange={handleChange} /> : <p className="no-editable">{todo}</p>}
             <div>
-                {editable ? <button className="btn" onClick={() => { handleUpdate({ todo: todoEdit, id }), handleEdit() }}>Actualizar Tarea</button> : <>
-                    <button className="btn" onClick={() => handleDelete(id)}>Eliminar</button>
-                    <button className="btn" onClick={handleEdit}>Editar</button></>}
+                {editable ? <button className="btn update" onClick={() => { handleUpdate({ todo: todoEdit, id }), handleEdit() }}><i class="fa-solid fa-check fa-2xl" style={{ color: "#ffffff;" }}></i></button> : <>
+                    <button className="btn trash" onClick={() => handleDelete(id)}><i className="fa-solid fa-trash-can fa-lg" style={{ color: "#ffffff" }}></i></button>
+                    <button className="btn edit" onClick={handleEdit}><i className="fa-solid fa-pen-to-square fa-lg" style={{ color: "#ffffff" }}></i></button></>}
 
             </div>
         </aside>

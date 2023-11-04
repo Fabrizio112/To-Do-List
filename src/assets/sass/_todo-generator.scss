@@ -1,18 +1,25 @@
 #todo-generator {
     width: 100%;
-    height: 30vh;
+    height: 20vh;
+    padding: 0 3rem;
     gap: 1rem;
-    @include flex(column, center, center);
+    @include flex(row, center, center);
 
-    textarea {
-        width: 80%;
-        height: 80%;
-        resize: none;
+    input {
+        width: 90%;
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 15px;
         outline: none;
-        font-size: 1.5rem;
+        border: 1px solid black;
     }
 
     button {
         display: block;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        padding: 1rem;
+        width: 10%;
     }
 }

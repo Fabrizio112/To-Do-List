@@ -2,8 +2,8 @@ function ToDoGenerator({ handleListChange }) {
 
     return (
         <form onSubmit={handleListChange} id="todo-generator">
-            <textarea name="task" placeholder="Write here your task"></textarea>
-            <button className="btn">Generate ToDo</button>
+            <input name="task" placeholder="Write here your task" />
+            <button className="btn">Add ToDo</button>
         </form>
     );
 }

@@ -6,30 +6,46 @@
 }
 
 html {
-    background-color: rgb(221, 139, 17);
     text-align: center;
 }
 
 #root {
+    @include flex(column, center, center);
+
     h1 {
         font-size: 3rem;
-        margin: 2rem 0;
+        margin-top: 2rem;
         font-weight: 400;
     }
 }
 
 #container-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 70%;
 
 }
 
 .btn {
     font-size: 1rem;
-    padding: 0.5rem 2rem;
+    padding: 1rem;
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    width: 50%;
+}
+
+.trash {
+    background-color: red;
+}
+
+.edit {
+    background-color: lightblue;
+}
+
+.update {
+    width: 100%;
+    background-color: green;
 }
