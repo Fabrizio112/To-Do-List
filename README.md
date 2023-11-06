@@ -53,6 +53,6 @@ First of all , I made a "to-do generator" that is a box that if the user writes 
 
 With the stuff contained into the "List" state , will be render "To-Do Card/s".Each has two buttons , one is delete and the other is edit .
 
-If user clicks delete , the "To-Do Card" will be delete. If the user clicks edit , the "To-Do Card" will be availaible for edit the content and change or not the task.
+If the user clicks delete , the "To-Do Card" will be delete. If the user clicks edit , the "To-Do Card" will be availaible for edit the content and change or not the task.
 
-For the styles i use SASS, because i feel so confortable and for me it´s very eficient this tool.
+For the styles i use SASS, because i feel so confortable and for me it´s very eficient this tool.   
