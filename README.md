@@ -2,7 +2,7 @@
 
 ## <i align="center" style="font-size:2rem"> 📝 LISTA DE TAREAS CON REACT </i>
 
-En este proyecto se usaron hooks como **useState** y tecnologias **CSS,HTML,Javascript,React,SASS**
+En este proyecto se usaron hooks como **useState** y tecnologias **CSS,HTML,Javascript,React,SASS**.
 
 _Este proyecto se realizo con el proposito de practicar React_
  
